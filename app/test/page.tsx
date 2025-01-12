@@ -1,6 +1,5 @@
 import React from 'react'
 import TestInput from '@/components/TestInput'
-import { createClient } from '@/utils/supabase/server';
 
 const page = () => {
     return (

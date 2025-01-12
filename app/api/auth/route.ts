@@ -13,6 +13,6 @@ export async function POST(request: Request) {
 
         return NextResponse.json({ user: data.user }, { status: 200 });
     } catch (err) {
-        return NextResponse.json({ error: 'サーバーエラーが発生しました。' }, { status: 500 });
+        return NextResponse.json({ error: `サーバーエラーが発生しました。(${err})` }, { status: 500 });
     }
 }

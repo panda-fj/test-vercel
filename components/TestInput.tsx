@@ -27,7 +27,7 @@ export default function AddUserForm() {
             setMessage('User added successfully!');
             setName('');
         } catch (err) {
-            setMessage('An error occurred while adding the user.');
+            setMessage(`An error occurred while adding the user.${err}`);
         }
     };
 

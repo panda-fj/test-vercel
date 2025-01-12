@@ -26,7 +26,7 @@ export default function Home() {
                 router.push('/profile'); // プロフィールページにリダイレクト
             }
         } catch (error) {
-            setMessage('エラーが発生しました。もう一度お試しください。');
+            setMessage(`エラーが発生しました。もう一度お試しください。(${error})`);
         }
     };
 
